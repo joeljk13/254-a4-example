@@ -5,5 +5,5 @@ static void NO_INLINE bar() {
 }
 
 void func() {
-    bar();
+    bar(); // which bar?
 }

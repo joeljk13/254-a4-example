@@ -1,6 +1,8 @@
 #include "foo.h"
 
 int foo() {
+    // Notice how there's a 4:5 ratio of asm to source lines here - this ratio
+    // can be aribtrary
     int x = 0;
     for (int i = 0; i < 100; ++i) {
         x += i;
@@ -16,13 +18,22 @@ static void NO_INLINE bar() {
 void NO_INLINE compilicated_func() {
     int x;
     scanf("%d\n", &x);
+    volatile int y = x;
 
-    printf("%d\n", x);
+    do {
+        for (int i = 0; i < 2; ++i) {
+            y += i;
+            printf("%d\n", y);
+        }
+    } while (y == 7);
+
+    printf("%d\n", y);
 }
 
 int main() {
-    bar();
+    bar(); // which bar?
     compilicated_func();
+    // Notice that this source comes from a different file
     blah();
     return 0;
 }

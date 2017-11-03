@@ -9,7 +9,7 @@ COMPILE_UNIT<header overall offset = 0x00000000>:
                     DW_AT_comp_dir              /home/hoover/u3/jkottas/ur/254-a4-example
                     DW_AT_ranges                0x00000000
 		ranges: 3 at .debug_ranges offset 0 (0x00000000) (48 bytes)
-			[ 0] range entry    0x00400580 0x004005da
+			[ 0] range entry    0x00400580 0x00400621
 			[ 1] range entry    0x00400470 0x0040049a
 			[ 2] range end      0x00000000 0x00000000
                     DW_AT_low_pc                0x00000000
@@ -50,410 +50,444 @@ LOCAL_SYMBOLS:
                       DW_AT_byte_size             0x00000004
                       DW_AT_encoding              DW_ATE_signed
                       DW_AT_name                  int
-< 1><0x00000069>    DW_TAG_base_type
+< 1><0x00000069>    DW_TAG_volatile_type
+                      DW_AT_type                  <0x00000062>
+< 1><0x0000006e>    DW_TAG_base_type
                       DW_AT_byte_size             0x00000008
                       DW_AT_encoding              DW_ATE_signed
                       DW_AT_name                  long int
-< 1><0x00000070>    DW_TAG_typedef
+< 1><0x00000075>    DW_TAG_typedef
                       DW_AT_name                  __off_t
                       DW_AT_decl_file             0x00000004 /usr/include/bits/types.h
                       DW_AT_decl_line             0x0000008c
-                      DW_AT_type                  <0x00000069>
-< 1><0x0000007b>    DW_TAG_typedef
+                      DW_AT_type                  <0x0000006e>
+< 1><0x00000080>    DW_TAG_typedef
                       DW_AT_name                  __off64_t
                       DW_AT_decl_file             0x00000004 /usr/include/bits/types.h
                       DW_AT_decl_line             0x0000008d
-                      DW_AT_type                  <0x00000069>
-< 1><0x00000086>    DW_TAG_pointer_type
+                      DW_AT_type                  <0x0000006e>
+< 1><0x0000008b>    DW_TAG_pointer_type
                       DW_AT_byte_size             0x00000008
-< 1><0x00000088>    DW_TAG_pointer_type
+< 1><0x0000008d>    DW_TAG_pointer_type
                       DW_AT_byte_size             0x00000008
-                      DW_AT_type                  <0x0000008e>
-< 1><0x0000008e>    DW_TAG_base_type
+                      DW_AT_type                  <0x00000093>
+< 1><0x00000093>    DW_TAG_base_type
                       DW_AT_byte_size             0x00000001
                       DW_AT_encoding              DW_ATE_signed_char
                       DW_AT_name                  char
-< 1><0x00000095>    DW_TAG_const_type
-                      DW_AT_type                  <0x0000008e>
-< 1><0x0000009a>    DW_TAG_structure_type
+< 1><0x0000009a>    DW_TAG_const_type
+                      DW_AT_type                  <0x00000093>
+< 1><0x0000009f>    DW_TAG_structure_type
                       DW_AT_name                  _IO_FILE
                       DW_AT_byte_size             0x000000d8
                       DW_AT_decl_file             0x00000005 /usr/include/libio.h
                       DW_AT_decl_line             0x000000f1
-                      DW_AT_sibling               <0x00000217>
-< 2><0x000000a6>      DW_TAG_member
+                      DW_AT_sibling               <0x0000021c>
+< 2><0x000000ab>      DW_TAG_member
                         DW_AT_name                  _flags
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x000000f2
                         DW_AT_type                  <0x00000062>
                         DW_AT_data_member_location  0
-< 2><0x000000b2>      DW_TAG_member
+< 2><0x000000b7>      DW_TAG_member
                         DW_AT_name                  _IO_read_ptr
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x000000f7
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  8
-< 2><0x000000be>      DW_TAG_member
+< 2><0x000000c3>      DW_TAG_member
                         DW_AT_name                  _IO_read_end
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x000000f8
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  16
-< 2><0x000000ca>      DW_TAG_member
+< 2><0x000000cf>      DW_TAG_member
                         DW_AT_name                  _IO_read_base
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x000000f9
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  24
-< 2><0x000000d6>      DW_TAG_member
+< 2><0x000000db>      DW_TAG_member
                         DW_AT_name                  _IO_write_base
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x000000fa
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  32
-< 2><0x000000e2>      DW_TAG_member
+< 2><0x000000e7>      DW_TAG_member
                         DW_AT_name                  _IO_write_ptr
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x000000fb
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  40
-< 2><0x000000ee>      DW_TAG_member
+< 2><0x000000f3>      DW_TAG_member
                         DW_AT_name                  _IO_write_end
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x000000fc
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  48
-< 2><0x000000fa>      DW_TAG_member
+< 2><0x000000ff>      DW_TAG_member
                         DW_AT_name                  _IO_buf_base
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x000000fd
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  56
-< 2><0x00000106>      DW_TAG_member
+< 2><0x0000010b>      DW_TAG_member
                         DW_AT_name                  _IO_buf_end
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x000000fe
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  64
-< 2><0x00000112>      DW_TAG_member
+< 2><0x00000117>      DW_TAG_member
                         DW_AT_name                  _IO_save_base
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000100
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  72
-< 2><0x0000011f>      DW_TAG_member
+< 2><0x00000124>      DW_TAG_member
                         DW_AT_name                  _IO_backup_base
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000101
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  80
-< 2><0x0000012c>      DW_TAG_member
+< 2><0x00000131>      DW_TAG_member
                         DW_AT_name                  _IO_save_end
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000102
-                        DW_AT_type                  <0x00000088>
+                        DW_AT_type                  <0x0000008d>
                         DW_AT_data_member_location  88
-< 2><0x00000139>      DW_TAG_member
+< 2><0x0000013e>      DW_TAG_member
                         DW_AT_name                  _markers
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000104
-                        DW_AT_type                  <0x0000024f>
+                        DW_AT_type                  <0x00000254>
                         DW_AT_data_member_location  96
-< 2><0x00000146>      DW_TAG_member
+< 2><0x0000014b>      DW_TAG_member
                         DW_AT_name                  _chain
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000106
-                        DW_AT_type                  <0x00000255>
+                        DW_AT_type                  <0x0000025a>
                         DW_AT_data_member_location  104
-< 2><0x00000153>      DW_TAG_member
+< 2><0x00000158>      DW_TAG_member
                         DW_AT_name                  _fileno
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000108
                         DW_AT_type                  <0x00000062>
                         DW_AT_data_member_location  112
-< 2><0x00000160>      DW_TAG_member
+< 2><0x00000165>      DW_TAG_member
                         DW_AT_name                  _flags2
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x0000010c
                         DW_AT_type                  <0x00000062>
                         DW_AT_data_member_location  116
-< 2><0x0000016d>      DW_TAG_member
+< 2><0x00000172>      DW_TAG_member
                         DW_AT_name                  _old_offset
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x0000010e
-                        DW_AT_type                  <0x00000070>
+                        DW_AT_type                  <0x00000075>
                         DW_AT_data_member_location  120
-< 2><0x0000017a>      DW_TAG_member
+< 2><0x0000017f>      DW_TAG_member
                         DW_AT_name                  _cur_column
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000112
                         DW_AT_type                  <0x00000046>
                         DW_AT_data_member_location  128 (-128)
-< 2><0x00000187>      DW_TAG_member
+< 2><0x0000018c>      DW_TAG_member
                         DW_AT_name                  _vtable_offset
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000113
                         DW_AT_type                  <0x00000054>
                         DW_AT_data_member_location  130 (-126)
-< 2><0x00000194>      DW_TAG_member
+< 2><0x00000199>      DW_TAG_member
                         DW_AT_name                  _shortbuf
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000114
-                        DW_AT_type                  <0x0000025b>
+                        DW_AT_type                  <0x00000260>
                         DW_AT_data_member_location  131 (-125)
-< 2><0x000001a1>      DW_TAG_member
+< 2><0x000001a6>      DW_TAG_member
                         DW_AT_name                  _lock
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000118
-                        DW_AT_type                  <0x0000026b>
+                        DW_AT_type                  <0x00000270>
                         DW_AT_data_member_location  136 (-120)
-< 2><0x000001ae>      DW_TAG_member
+< 2><0x000001b3>      DW_TAG_member
                         DW_AT_name                  _offset
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000121
-                        DW_AT_type                  <0x0000007b>
+                        DW_AT_type                  <0x00000080>
                         DW_AT_data_member_location  144 (-112)
-< 2><0x000001bb>      DW_TAG_member
+< 2><0x000001c0>      DW_TAG_member
                         DW_AT_name                  __pad1
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000129
-                        DW_AT_type                  <0x00000086>
+                        DW_AT_type                  <0x0000008b>
                         DW_AT_data_member_location  152 (-104)
-< 2><0x000001c8>      DW_TAG_member
+< 2><0x000001cd>      DW_TAG_member
                         DW_AT_name                  __pad2
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x0000012a
-                        DW_AT_type                  <0x00000086>
+                        DW_AT_type                  <0x0000008b>
                         DW_AT_data_member_location  160 (-96)
-< 2><0x000001d5>      DW_TAG_member
+< 2><0x000001da>      DW_TAG_member
                         DW_AT_name                  __pad3
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x0000012b
-                        DW_AT_type                  <0x00000086>
+                        DW_AT_type                  <0x0000008b>
                         DW_AT_data_member_location  168 (-88)
-< 2><0x000001e2>      DW_TAG_member
+< 2><0x000001e7>      DW_TAG_member
                         DW_AT_name                  __pad4
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x0000012c
-                        DW_AT_type                  <0x00000086>
+                        DW_AT_type                  <0x0000008b>
                         DW_AT_data_member_location  176 (-80)
-< 2><0x000001ef>      DW_TAG_member
+< 2><0x000001f4>      DW_TAG_member
                         DW_AT_name                  __pad5
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x0000012e
                         DW_AT_type                  <0x0000002d>
                         DW_AT_data_member_location  184 (-72)
-< 2><0x000001fc>      DW_TAG_member
+< 2><0x00000201>      DW_TAG_member
                         DW_AT_name                  _mode
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x0000012f
                         DW_AT_type                  <0x00000062>
                         DW_AT_data_member_location  192 (-64)
-< 2><0x00000209>      DW_TAG_member
+< 2><0x0000020e>      DW_TAG_member
                         DW_AT_name                  _unused2
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x00000131
-                        DW_AT_type                  <0x00000271>
+                        DW_AT_type                  <0x00000276>
                         DW_AT_data_member_location  196 (-60)
-< 1><0x00000217>    DW_TAG_typedef
+< 1><0x0000021c>    DW_TAG_typedef
                       DW_AT_name                  _IO_lock_t
                       DW_AT_decl_file             0x00000005 /usr/include/libio.h
                       DW_AT_decl_line             0x00000096
-< 1><0x0000021e>    DW_TAG_structure_type
+< 1><0x00000223>    DW_TAG_structure_type
                       DW_AT_name                  _IO_marker
                       DW_AT_byte_size             0x00000018
                       DW_AT_decl_file             0x00000005 /usr/include/libio.h
                       DW_AT_decl_line             0x0000009c
-                      DW_AT_sibling               <0x0000024f>
-< 2><0x0000022a>      DW_TAG_member
+                      DW_AT_sibling               <0x00000254>
+< 2><0x0000022f>      DW_TAG_member
                         DW_AT_name                  _next
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x0000009d
-                        DW_AT_type                  <0x0000024f>
+                        DW_AT_type                  <0x00000254>
                         DW_AT_data_member_location  0
-< 2><0x00000236>      DW_TAG_member
+< 2><0x0000023b>      DW_TAG_member
                         DW_AT_name                  _sbuf
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x0000009e
-                        DW_AT_type                  <0x00000255>
+                        DW_AT_type                  <0x0000025a>
                         DW_AT_data_member_location  8
-< 2><0x00000242>      DW_TAG_member
+< 2><0x00000247>      DW_TAG_member
                         DW_AT_name                  _pos
                         DW_AT_decl_file             0x00000005 /usr/include/libio.h
                         DW_AT_decl_line             0x000000a2
                         DW_AT_type                  <0x00000062>
                         DW_AT_data_member_location  16
-< 1><0x0000024f>    DW_TAG_pointer_type
+< 1><0x00000254>    DW_TAG_pointer_type
                       DW_AT_byte_size             0x00000008
-                      DW_AT_type                  <0x0000021e>
-< 1><0x00000255>    DW_TAG_pointer_type
+                      DW_AT_type                  <0x00000223>
+< 1><0x0000025a>    DW_TAG_pointer_type
                       DW_AT_byte_size             0x00000008
-                      DW_AT_type                  <0x0000009a>
-< 1><0x0000025b>    DW_TAG_array_type
-                      DW_AT_type                  <0x0000008e>
-                      DW_AT_sibling               <0x0000026b>
-< 2><0x00000264>      DW_TAG_subrange_type
+                      DW_AT_type                  <0x0000009f>
+< 1><0x00000260>    DW_TAG_array_type
+                      DW_AT_type                  <0x00000093>
+                      DW_AT_sibling               <0x00000270>
+< 2><0x00000269>      DW_TAG_subrange_type
                         DW_AT_type                  <0x00000038>
                         DW_AT_upper_bound           0
-< 1><0x0000026b>    DW_TAG_pointer_type
+< 1><0x00000270>    DW_TAG_pointer_type
                       DW_AT_byte_size             0x00000008
-                      DW_AT_type                  <0x00000217>
-< 1><0x00000271>    DW_TAG_array_type
-                      DW_AT_type                  <0x0000008e>
-                      DW_AT_sibling               <0x00000281>
-< 2><0x0000027a>      DW_TAG_subrange_type
+                      DW_AT_type                  <0x0000021c>
+< 1><0x00000276>    DW_TAG_array_type
+                      DW_AT_type                  <0x00000093>
+                      DW_AT_sibling               <0x00000286>
+< 2><0x0000027f>      DW_TAG_subrange_type
                         DW_AT_type                  <0x00000038>
                         DW_AT_upper_bound           19
-< 1><0x00000281>    DW_TAG_structure_type
+< 1><0x00000286>    DW_TAG_structure_type
                       DW_AT_name                  _IO_FILE_plus
                       DW_AT_declaration           yes(1)
-< 1><0x00000286>    DW_TAG_variable
+< 1><0x0000028b>    DW_TAG_variable
                       DW_AT_name                  _IO_2_1_stdin_
                       DW_AT_decl_file             0x00000005 /usr/include/libio.h
                       DW_AT_decl_line             0x0000013b
-                      DW_AT_type                  <0x00000281>
+                      DW_AT_type                  <0x00000286>
                       DW_AT_external              yes(1)
                       DW_AT_declaration           yes(1)
-< 1><0x00000292>    DW_TAG_variable
+< 1><0x00000297>    DW_TAG_variable
                       DW_AT_name                  _IO_2_1_stdout_
                       DW_AT_decl_file             0x00000005 /usr/include/libio.h
                       DW_AT_decl_line             0x0000013c
-                      DW_AT_type                  <0x00000281>
+                      DW_AT_type                  <0x00000286>
                       DW_AT_external              yes(1)
                       DW_AT_declaration           yes(1)
-< 1><0x0000029e>    DW_TAG_variable
+< 1><0x000002a3>    DW_TAG_variable
                       DW_AT_name                  _IO_2_1_stderr_
                       DW_AT_decl_file             0x00000005 /usr/include/libio.h
                       DW_AT_decl_line             0x0000013d
-                      DW_AT_type                  <0x00000281>
+                      DW_AT_type                  <0x00000286>
                       DW_AT_external              yes(1)
                       DW_AT_declaration           yes(1)
-< 1><0x000002aa>    DW_TAG_pointer_type
+< 1><0x000002af>    DW_TAG_pointer_type
                       DW_AT_byte_size             0x00000008
-                      DW_AT_type                  <0x00000095>
-< 1><0x000002b0>    DW_TAG_const_type
-                      DW_AT_type                  <0x000002aa>
-< 1><0x000002b5>    DW_TAG_variable
+                      DW_AT_type                  <0x0000009a>
+< 1><0x000002b5>    DW_TAG_const_type
+                      DW_AT_type                  <0x000002af>
+< 1><0x000002ba>    DW_TAG_variable
                       DW_AT_name                  stdin
                       DW_AT_decl_file             0x00000006 /usr/include/stdio.h
                       DW_AT_decl_line             0x000000ab
-                      DW_AT_type                  <0x00000255>
+                      DW_AT_type                  <0x0000025a>
                       DW_AT_external              yes(1)
                       DW_AT_declaration           yes(1)
-< 1><0x000002c0>    DW_TAG_variable
+< 1><0x000002c5>    DW_TAG_variable
                       DW_AT_name                  stdout
                       DW_AT_decl_file             0x00000006 /usr/include/stdio.h
                       DW_AT_decl_line             0x000000ac
-                      DW_AT_type                  <0x00000255>
+                      DW_AT_type                  <0x0000025a>
                       DW_AT_external              yes(1)
                       DW_AT_declaration           yes(1)
-< 1><0x000002cb>    DW_TAG_variable
+< 1><0x000002d0>    DW_TAG_variable
                       DW_AT_name                  stderr
                       DW_AT_decl_file             0x00000006 /usr/include/stdio.h
                       DW_AT_decl_line             0x000000ad
-                      DW_AT_type                  <0x00000255>
+                      DW_AT_type                  <0x0000025a>
                       DW_AT_external              yes(1)
                       DW_AT_declaration           yes(1)
-< 1><0x000002d6>    DW_TAG_variable
+< 1><0x000002db>    DW_TAG_variable
                       DW_AT_name                  sys_nerr
                       DW_AT_decl_file             0x00000007 /usr/include/bits/sys_errlist.h
                       DW_AT_decl_line             0x0000001a
                       DW_AT_type                  <0x00000062>
                       DW_AT_external              yes(1)
                       DW_AT_declaration           yes(1)
-< 1><0x000002e1>    DW_TAG_array_type
-                      DW_AT_type                  <0x000002b0>
-                      DW_AT_sibling               <0x000002ec>
-< 2><0x000002ea>      DW_TAG_subrange_type
-< 1><0x000002ec>    DW_TAG_const_type
-                      DW_AT_type                  <0x000002e1>
-< 1><0x000002f1>    DW_TAG_variable
+< 1><0x000002e6>    DW_TAG_array_type
+                      DW_AT_type                  <0x000002b5>
+                      DW_AT_sibling               <0x000002f1>
+< 2><0x000002ef>      DW_TAG_subrange_type
+< 1><0x000002f1>    DW_TAG_const_type
+                      DW_AT_type                  <0x000002e6>
+< 1><0x000002f6>    DW_TAG_variable
                       DW_AT_name                  sys_errlist
                       DW_AT_decl_file             0x00000007 /usr/include/bits/sys_errlist.h
                       DW_AT_decl_line             0x0000001b
-                      DW_AT_type                  <0x000002ec>
+                      DW_AT_type                  <0x000002f1>
                       DW_AT_external              yes(1)
                       DW_AT_declaration           yes(1)
-< 1><0x000002fc>    DW_TAG_subprogram
+< 1><0x00000301>    DW_TAG_subprogram
                       DW_AT_external              yes(1)
                       DW_AT_name                  main
                       DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                      DW_AT_decl_line             0x00000017
+                      DW_AT_decl_line             0x00000021
                       DW_AT_type                  <0x00000062>
                       DW_AT_low_pc                0x00400470
                       DW_AT_high_pc               <offset-from-lowpc>42
                       DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
                       DW_AT_GNU_all_call_sites    yes(1)
-                      DW_AT_sibling               <0x0000038f>
-< 2><0x0000031d>      DW_TAG_inlined_subroutine
-                        DW_AT_abstract_origin       <0x0000046f>
+                      DW_AT_sibling               <0x00000394>
+< 2><0x00000322>      DW_TAG_inlined_subroutine
+                        DW_AT_abstract_origin       <0x000004dd>
                         DW_AT_low_pc                0x00400482
                         DW_AT_high_pc               <offset-from-lowpc>17
                         DW_AT_call_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                        DW_AT_call_line             0x0000001a
-                        DW_AT_sibling               <0x00000374>
-< 3><0x00000338>        DW_TAG_lexical_block
+                        DW_AT_call_line             0x00000025
+                        DW_AT_sibling               <0x00000379>
+< 3><0x0000033d>        DW_TAG_lexical_block
                           DW_AT_low_pc                0x00400482
                           DW_AT_high_pc               <offset-from-lowpc>17
-< 4><0x00000349>          DW_TAG_variable
-                            DW_AT_abstract_origin       <0x0000047f>
+< 4><0x0000034e>          DW_TAG_variable
+                            DW_AT_abstract_origin       <0x000004ed>
                             DW_AT_location              len 0x0002: 916c: DW_OP_fbreg -20
-< 4><0x00000351>          DW_TAG_GNU_call_site
+< 4><0x00000356>          DW_TAG_GNU_call_site
                             DW_AT_low_pc                0x00400493
-                            DW_AT_abstract_origin       <0x00000489>
-< 5><0x0000035e>            DW_TAG_GNU_call_site_parameter
+                            DW_AT_abstract_origin       <0x000004f7>
+< 5><0x00000363>            DW_TAG_GNU_call_site_parameter
                               DW_AT_location              len 0x0001: 55: DW_OP_reg5
-                              DW_AT_GNU_call_site_value   len 0x0009: 039406400000000000: DW_OP_addr 0x00400694
-< 5><0x0000036b>            DW_TAG_GNU_call_site_parameter
+                              DW_AT_GNU_call_site_value   len 0x0009: 03e406400000000000: DW_OP_addr 0x004006e4
+< 5><0x00000370>            DW_TAG_GNU_call_site_parameter
                               DW_AT_location              len 0x0001: 54: DW_OP_reg4
                               DW_AT_GNU_call_site_value   len 0x0002: 916c: DW_OP_fbreg -20
-< 2><0x00000374>      DW_TAG_GNU_call_site
+< 2><0x00000379>      DW_TAG_GNU_call_site
                         DW_AT_low_pc                0x0040047b
-                        DW_AT_abstract_origin       <0x000003f9>
-< 2><0x00000381>      DW_TAG_GNU_call_site
+                        DW_AT_abstract_origin       <0x00000467>
+< 2><0x00000386>      DW_TAG_GNU_call_site
                         DW_AT_low_pc                0x00400482
-                        DW_AT_abstract_origin       <0x0000038f>
-< 1><0x0000038f>    DW_TAG_subprogram
+                        DW_AT_abstract_origin       <0x00000394>
+< 1><0x00000394>    DW_TAG_subprogram
                       DW_AT_external              yes(1)
                       DW_AT_name                  compilicated_func
                       DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                      DW_AT_decl_line             0x00000010
+                      DW_AT_decl_line             0x00000012
                       DW_AT_low_pc                0x004005b0
-                      DW_AT_high_pc               <offset-from-lowpc>42
+                      DW_AT_high_pc               <offset-from-lowpc>113
                       DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
                       DW_AT_GNU_all_call_sites    yes(1)
-                      DW_AT_sibling               <0x000003f9>
-< 2><0x000003ac>      DW_TAG_variable
+                      DW_AT_sibling               <0x00000467>
+< 2><0x000003b1>      DW_TAG_variable
                         DW_AT_name                  x
                         DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                        DW_AT_decl_line             0x00000011
+                        DW_AT_decl_line             0x00000013
                         DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 2><0x000003bd>      DW_TAG_variable
+                        DW_AT_name                  y
+                        DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
+                        DW_AT_decl_line             0x00000015
+                        DW_AT_type                  <0x00000069>
                         DW_AT_location              len 0x0002: 916c: DW_OP_fbreg -20
-< 2><0x000003b8>      DW_TAG_GNU_call_site
+< 2><0x000003c9>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x004005d0
+                        DW_AT_high_pc               <offset-from-lowpc>51
+                        DW_AT_sibling               <0x00000426>
+< 3><0x000003de>        DW_TAG_variable
+                          DW_AT_name                  i
+                          DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
+                          DW_AT_decl_line             0x00000018
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              <loclist at offset 0x00000000 with 3 entries follows>
+			[ 0]< offset pair low-off : 0x004005d0 addr  0x004005d0 high-off  0x004005e8 addr 0x004005e8>DW_OP_lit0 DW_OP_stack_value
+			[ 1]< offset pair low-off : 0x004005e8 addr  0x004005e8 high-off  0x00400603 addr 0x00400603>DW_OP_lit1 DW_OP_stack_value
+			[ 2]< offset pair low-off : 0x00400603 addr  0x00400603 high-off  0x00400621 addr 0x00400621>DW_OP_lit2 DW_OP_stack_value
+< 3><0x000003eb>        DW_TAG_GNU_call_site
+                          DW_AT_low_pc                0x004005e8
+                          DW_AT_abstract_origin       <0x00000507>
+                          DW_AT_sibling               <0x0000040a>
+< 4><0x000003fc>          DW_TAG_GNU_call_site_parameter
+                            DW_AT_location              len 0x0001: 55: DW_OP_reg5
+                            DW_AT_GNU_call_site_value   len 0x0009: 03e006400000000000: DW_OP_addr 0x004006e0
+< 3><0x0000040a>        DW_TAG_GNU_call_site
+                          DW_AT_low_pc                0x00400603
+                          DW_AT_abstract_origin       <0x00000507>
+< 4><0x00000417>          DW_TAG_GNU_call_site_parameter
+                            DW_AT_location              len 0x0001: 55: DW_OP_reg5
+                            DW_AT_GNU_call_site_value   len 0x0009: 03e006400000000000: DW_OP_addr 0x004006e0
+< 2><0x00000426>      DW_TAG_GNU_call_site
                         DW_AT_low_pc                0x004005c5
-                        DW_AT_abstract_origin       <0x00000489>
-                        DW_AT_sibling               <0x000003dd>
-< 3><0x000003c9>        DW_TAG_GNU_call_site_parameter
+                        DW_AT_abstract_origin       <0x000004f7>
+                        DW_AT_sibling               <0x0000044b>
+< 3><0x00000437>        DW_TAG_GNU_call_site_parameter
                           DW_AT_location              len 0x0001: 55: DW_OP_reg5
-                          DW_AT_GNU_call_site_value   len 0x0009: 039006400000000000: DW_OP_addr 0x00400690
-< 3><0x000003d6>        DW_TAG_GNU_call_site_parameter
+                          DW_AT_GNU_call_site_value   len 0x0009: 03e006400000000000: DW_OP_addr 0x004006e0
+< 3><0x00000444>        DW_TAG_GNU_call_site_parameter
                           DW_AT_location              len 0x0001: 54: DW_OP_reg4
-                          DW_AT_GNU_call_site_value   len 0x0002: 916c: DW_OP_fbreg -20
-< 2><0x000003dd>      DW_TAG_GNU_call_site
-                        DW_AT_low_pc                0x004005d5
-                        DW_AT_abstract_origin       <0x00000499>
-< 3><0x000003ea>        DW_TAG_GNU_call_site_parameter
+                          DW_AT_GNU_call_site_value   len 0x0002: 9168: DW_OP_fbreg -24
+< 2><0x0000044b>      DW_TAG_GNU_call_site
+                        DW_AT_low_pc                0x0040061c
+                        DW_AT_abstract_origin       <0x00000507>
+< 3><0x00000458>        DW_TAG_GNU_call_site_parameter
                           DW_AT_location              len 0x0001: 55: DW_OP_reg5
-                          DW_AT_GNU_call_site_value   len 0x0009: 039006400000000000: DW_OP_addr 0x00400690
-< 1><0x000003f9>    DW_TAG_subprogram
+                          DW_AT_GNU_call_site_value   len 0x0009: 03e006400000000000: DW_OP_addr 0x004006e0
+< 1><0x00000467>    DW_TAG_subprogram
                       DW_AT_name                  bar
                       DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                      DW_AT_decl_line             0x0000000c
+                      DW_AT_decl_line             0x0000000e
                       DW_AT_low_pc                0x00400580
                       DW_AT_high_pc               <offset-from-lowpc>1
                       DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
                       DW_AT_GNU_all_call_sites    yes(1)
-< 1><0x00000412>    DW_TAG_subprogram
+< 1><0x00000480>    DW_TAG_subprogram
                       DW_AT_external              yes(1)
                       DW_AT_name                  foo
                       DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
@@ -463,43 +497,43 @@ LOCAL_SYMBOLS:
                       DW_AT_high_pc               <offset-from-lowpc>31
                       DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
                       DW_AT_GNU_all_call_sites    yes(1)
-                      DW_AT_sibling               <0x0000046f>
-< 2><0x00000433>      DW_TAG_variable
+                      DW_AT_sibling               <0x000004dd>
+< 2><0x000004a1>      DW_TAG_variable
                         DW_AT_name                  x
                         DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                        DW_AT_decl_line             0x00000004
+                        DW_AT_decl_line             0x00000006
                         DW_AT_type                  <0x00000062>
                         DW_AT_const_value           0
-< 2><0x0000043d>      DW_TAG_lexical_block
-                        DW_AT_sibling               <0x0000044c>
-< 3><0x00000442>        DW_TAG_variable
+< 2><0x000004ab>      DW_TAG_lexical_block
+                        DW_AT_sibling               <0x000004ba>
+< 3><0x000004b0>        DW_TAG_variable
                           DW_AT_name                  i
                           DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                          DW_AT_decl_line             0x00000005
+                          DW_AT_decl_line             0x00000007
                           DW_AT_type                  <0x00000062>
-< 2><0x0000044c>      DW_TAG_GNU_call_site
+< 2><0x000004ba>      DW_TAG_GNU_call_site
                         DW_AT_low_pc                0x004005a5
-                        DW_AT_abstract_origin       <0x00000499>
-< 3><0x00000459>        DW_TAG_GNU_call_site_parameter
+                        DW_AT_abstract_origin       <0x00000507>
+< 3><0x000004c7>        DW_TAG_GNU_call_site_parameter
                           DW_AT_location              len 0x0001: 55: DW_OP_reg5
-                          DW_AT_GNU_call_site_value   len 0x0009: 039006400000000000: DW_OP_addr 0x00400690
-< 3><0x00000466>        DW_TAG_GNU_call_site_parameter
+                          DW_AT_GNU_call_site_value   len 0x0009: 03e006400000000000: DW_OP_addr 0x004006e0
+< 3><0x000004d4>        DW_TAG_GNU_call_site_parameter
                           DW_AT_location              len 0x0001: 54: DW_OP_reg4
                           DW_AT_GNU_call_site_value   len 0x0003: 0a5613: DW_OP_const2u 4950
-< 1><0x0000046f>    DW_TAG_subprogram
+< 1><0x000004dd>    DW_TAG_subprogram
                       DW_AT_external              yes(1)
                       DW_AT_name                  blah
                       DW_AT_decl_file             0x00000002 /home/hoover/u3/jkottas/ur/254-a4-example/foo.h
                       DW_AT_decl_line             0x00000004
                       DW_AT_type                  <0x00000062>
                       DW_AT_inline                DW_INL_declared_inlined
-                      DW_AT_sibling               <0x00000489>
-< 2><0x0000047f>      DW_TAG_variable
+                      DW_AT_sibling               <0x000004f7>
+< 2><0x000004ed>      DW_TAG_variable
                         DW_AT_name                  x
                         DW_AT_decl_file             0x00000002 /home/hoover/u3/jkottas/ur/254-a4-example/foo.h
                         DW_AT_decl_line             0x00000005
                         DW_AT_type                  <0x00000062>
-< 1><0x00000489>    DW_TAG_subprogram
+< 1><0x000004f7>    DW_TAG_subprogram
                       DW_AT_external              yes(1)
                       DW_AT_declaration           yes(1)
                       DW_AT_linkage_name          __isoc99_scanf
@@ -507,7 +541,7 @@ LOCAL_SYMBOLS:
                       DW_AT_decl_file             0x00000006 /usr/include/stdio.h
                       DW_AT_decl_line             0x000001c1
                       DW_AT_linkage_name          __isoc99_scanf
-< 1><0x00000499>    DW_TAG_subprogram
+< 1><0x00000507>    DW_TAG_subprogram
                       DW_AT_external              yes(1)
                       DW_AT_declaration           yes(1)
                       DW_AT_linkage_name          printf
@@ -522,23 +556,33 @@ Source lines (from CU-DIE at .debug_info offset 0x0000000b):
             PE prologue end, EB epilogue begin
             IS=val ISA number, DI=val discriminator value
 <pc>        [lno,col] NS BB ET PE EB IS= DI= uri: "filepath"
-0x00400580  [  12, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/foo.c"
-0x00400580  [  13, 0] NS
-0x00400580  [  14, 0] NS
+0x00400580  [  14, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/foo.c"
+0x00400580  [  15, 0] NS
+0x00400580  [  16, 0] NS
 0x00400590  [   3, 0] NS
-0x00400594  [   8, 0] NS
-0x004005a5  [  10, 0] NS
-0x004005b0  [  16, 0] NS
-0x004005b4  [  18, 0] NS
-0x004005c5  [  20, 0] NS
-0x004005d5  [  21, 0] NS
-0x004005da  [  21, 0] NS ET
-0x00400470  [  23, 0] NS
-0x00400474  [  24, 0] NS
-0x0040047b  [  25, 0] NS
+0x00400594  [  10, 0] NS
+0x004005a5  [  12, 0] NS
+0x004005b0  [  18, 0] NS
+0x004005b4  [  20, 0] NS
+0x004005c5  [  21, 0] NS
+0x004005d0  [  25, 0] NS
+0x004005d4  [  26, 0] NS
+0x004005d9  [  25, 0] NS
+0x004005dd  [  26, 0] NS
+0x004005e8  [  25, 0] NS
+0x004005ec  [  26, 0] NS
+0x004005f1  [  25, 0] NS
+0x004005f8  [  26, 0] NS
+0x00400603  [  28, 0] NS
+0x0040060c  [  30, 0] NS
+0x0040061c  [  31, 0] NS
+0x00400621  [  31, 0] NS ET
+0x00400470  [  33, 0] NS
+0x00400474  [  34, 0] NS
+0x0040047b  [  35, 0] NS
 0x00400482  [   6, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/foo.h"
-0x00400493  [  28, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/foo.c"
-0x0040049a  [  28, 0] NS ET
+0x00400493  [  39, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/foo.c"
+0x0040049a  [  39, 0] NS ET
 
 .debug_macro: Macro info for a single cu
 Macro data from CU-DIE at .debug_info offset 0x0000000b:
@@ -1456,15 +1500,15 @@ Macro data from CU-DIE at .debug_info offset 0x0000000b:
    [  3] 0x06 DW_MACRO_undef_strp   line 190 str offset 0x000017dd __STDIO_INLINE
    [  4] 0x00 end-of-macros       
 
-COMPILE_UNIT<header overall offset = 0x000004a6>:
+COMPILE_UNIT<header overall offset = 0x00000514>:
 < 0><0x0000000b>  DW_TAG_compile_unit
                     DW_AT_producer              GNU C11 7.2.1 20170915 (Red Hat 7.2.1-2) -mtune=generic -march=x86-64 -g3 -O3
                     DW_AT_language              DW_LANG_C99
                     DW_AT_name                  bar.c
                     DW_AT_comp_dir              /home/hoover/u3/jkottas/ur/254-a4-example
-                    DW_AT_low_pc                0x004005e0
+                    DW_AT_low_pc                0x00400630
                     DW_AT_high_pc               <offset-from-lowpc>20
-                    DW_AT_stmt_list             0x000001e1
+                    DW_AT_stmt_list             0x000001eb
                     DW_AT_GNU_macros            0x000012b2
 
 LOCAL_SYMBOLS:
@@ -1830,40 +1874,40 @@ LOCAL_SYMBOLS:
                       DW_AT_name                  func
                       DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/bar.c
                       DW_AT_decl_line             0x00000007
-                      DW_AT_low_pc                0x004005f0
+                      DW_AT_low_pc                0x00400640
                       DW_AT_high_pc               <offset-from-lowpc>4
                       DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
                       DW_AT_GNU_all_call_sites    yes(1)
                       DW_AT_sibling               <0x0000032b>
 < 2><0x0000031d>      DW_TAG_GNU_call_site
-                        DW_AT_low_pc                0x004005f4
+                        DW_AT_low_pc                0x00400644
                         DW_AT_GNU_tail_call         yes(1)
                         DW_AT_abstract_origin       <0x0000032b>
 < 1><0x0000032b>    DW_TAG_subprogram
                       DW_AT_name                  bar
                       DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/bar.c
                       DW_AT_decl_line             0x00000003
-                      DW_AT_low_pc                0x004005e0
+                      DW_AT_low_pc                0x00400630
                       DW_AT_high_pc               <offset-from-lowpc>1
                       DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
                       DW_AT_GNU_all_call_sites    yes(1)
 
 .debug_line: line number info for a single cu
-Source lines (from CU-DIE at .debug_info offset 0x000004b1):
+Source lines (from CU-DIE at .debug_info offset 0x0000051f):
 
             NS new statement, BB new basic block, ET end of text sequence
             PE prologue end, EB epilogue begin
             IS=val ISA number, DI=val discriminator value
 <pc>        [lno,col] NS BB ET PE EB IS= DI= uri: "filepath"
-0x004005e0  [   3, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/bar.c"
-0x004005e0  [   4, 0] NS
-0x004005e0  [   5, 0] NS
-0x004005f0  [   7, 0] NS
-0x004005f0  [   8, 0] NS
-0x004005f4  [   8, 0] NS ET
+0x00400630  [   3, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/bar.c"
+0x00400630  [   4, 0] NS
+0x00400630  [   5, 0] NS
+0x00400640  [   7, 0] NS
+0x00400640  [   8, 0] NS
+0x00400644  [   8, 0] NS ET
 
 .debug_macro: Macro info for a single cu
-Macro data from CU-DIE at .debug_info offset 0x000004b1:
+Macro data from CU-DIE at .debug_info offset 0x0000051f:
   Macro version: 4
   MacroInformationEntries count: 80, bytes length: 275
    [  0] 0x07 DW_MACRO_import       offset 0x0000011a
@@ -2703,7 +2747,7 @@ COMPILE_UNIT<header overall offset = 0x00000000>:
                     DW_AT_comp_dir              /home/hoover/u3/jkottas/ur/254-a4-example
                     DW_AT_ranges                0x00000000
 		ranges: 3 at .debug_ranges offset 0 (0x00000000) (48 bytes)
-			[ 0] range entry    0x00400580 0x004005da
+			[ 0] range entry    0x00400580 0x00400621
 			[ 1] range entry    0x00400470 0x0040049a
 			[ 2] range end      0x00000000 0x00000000
                     DW_AT_low_pc                0x00000000
@@ -2711,23 +2755,23 @@ COMPILE_UNIT<header overall offset = 0x00000000>:
                     DW_AT_GNU_macros            0x00000000
 
 
-arange starts at 0x00400580, length of 0x0000005a, cu_die_offset = 0x0000000b
+arange starts at 0x00400580, length of 0x000000a1, cu_die_offset = 0x0000000b
 arange starts at 0x00400470, length of 0x0000002a, cu_die_offset = 0x0000000b
 arange end
 
-COMPILE_UNIT<header overall offset = 0x000004a6>:
+COMPILE_UNIT<header overall offset = 0x00000514>:
 < 0><0x0000000b>  DW_TAG_compile_unit
                     DW_AT_producer              GNU C11 7.2.1 20170915 (Red Hat 7.2.1-2) -mtune=generic -march=x86-64 -g3 -O3
                     DW_AT_language              DW_LANG_C99
                     DW_AT_name                  bar.c
                     DW_AT_comp_dir              /home/hoover/u3/jkottas/ur/254-a4-example
-                    DW_AT_low_pc                0x004005e0
+                    DW_AT_low_pc                0x00400630
                     DW_AT_high_pc               <offset-from-lowpc>20
-                    DW_AT_stmt_list             0x000001e1
+                    DW_AT_stmt_list             0x000001eb
                     DW_AT_GNU_macros            0x000012b2
 
 
-arange starts at 0x004005e0, length of 0x00000014, cu_die_offset = 0x000004b1
+arange starts at 0x00400630, length of 0x00000014, cu_die_offset = 0x0000051f
 arange end
 
 .debug_frame
