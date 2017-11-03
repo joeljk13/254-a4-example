@@ -111,6 +111,7 @@
 
         <tr>
             <td>
+                <a name="func">
                 void func() {<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;bar();<br>
                 }
@@ -133,6 +134,21 @@
                 retq   <br>
                 nopl   0x0(%rax,%rax,1)<br>
                 nopw   %cs:0x0(%rax,%rax,1)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a name="compilicated_func">
+                void NO_INLINE compilicated_func() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;int x;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;scanf("%d\n", &amp;x);<br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;printf("%d\n", x);<br>
+                }
+            </td>
+            <td>
+                ????
             </td>
         </tr>
 
