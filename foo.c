@@ -11,8 +11,9 @@ void foo() {
 static void NO_INLINE bar() {
 }
 
-void func_with_unrolled_loop() {
-
+void compilicated_func() {
+    int x;
+    scanf("%d\n", &x);
 }
 
 int main() {
