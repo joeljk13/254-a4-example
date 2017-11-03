@@ -9,15 +9,19 @@ void foo() {
 }
 
 static void NO_INLINE bar() {
+    asm("");
 }
 
-void compilicated_func() {
+void NO_INLINE compilicated_func() {
     int x;
     scanf("%d\n", &x);
+
+    printf("%d\n", x);
 }
 
 int main() {
     bar();
+    compilicated_func();
     blah();
     return 0;
 }
