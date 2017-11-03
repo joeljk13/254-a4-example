@@ -1,11 +1,12 @@
 #include "foo.h"
 
-void foo() {
+int foo() {
     int x = 0;
     for (int i = 0; i < 100; ++i) {
         x += i;
     }
     printf("%d\n", x);
+    return x;
 }
 
 static void NO_INLINE bar() {
