@@ -43,7 +43,7 @@ int main() {
   400474:	31 c0                	xor    %eax,%eax
   400476:	e8 05 01 00 00       	callq  400580 <bar>
   40047b:	31 c0                	xor    %eax,%eax
-  40047d:	e8 2e 01 00 00       	callq  4005b0 <compilicated_func>
+  40047d:	e8 2e 01 00 00       	callq  4005b0 <complicated_func>
   400482:	48 8d 74 24 0c       	lea    0xc(%rsp),%rsi
   400487:	bf e4 06 40 00       	mov    $0x4006e4,%edi
   40048c:	31 c0                	xor    %eax,%eax
@@ -150,7 +150,7 @@ int foo() {
   4005ae:	c3                   	retq   
   4005af:	90                   	nop
 
-00000000004005b0 <compilicated_func>:
+00000000004005b0 <complicated_func>:
   4005b0:	48 83 ec 18          	sub    $0x18,%rsp
   4005b4:	bf e0 06 40 00       	mov    $0x4006e0,%edi
   4005b9:	31 c0                	xor    %eax,%eax
@@ -174,7 +174,7 @@ int foo() {
   4005fe:	e8 4d fe ff ff       	callq  400450 <printf@plt>
   400603:	8b 44 24 0c          	mov    0xc(%rsp),%eax
   400607:	83 f8 07             	cmp    $0x7,%eax
-  40060a:	74 c4                	je     4005d0 <compilicated_func+0x20>
+  40060a:	74 c4                	je     4005d0 <complicated_func+0x20>
   40060c:	8b 74 24 0c          	mov    0xc(%rsp),%esi
   400610:	bf e0 06 40 00       	mov    $0x4006e0,%edi
   400615:	31 c0                	xor    %eax,%eax
