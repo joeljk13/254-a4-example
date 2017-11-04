@@ -1,9 +1,10 @@
-#include "foo.h"
+#include "blah.h"
 
 static void NO_INLINE bar() {
     asm("");
 }
 
 void func() {
-    bar(); // which bar?
+    // which bar?
+    bar();
 }

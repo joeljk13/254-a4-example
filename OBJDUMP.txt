@@ -186,7 +186,7 @@ int foo() {
   40062b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
 
 0000000000400630 <bar>:
-#include "foo.h"
+#include "blah.h"
 
 static void NO_INLINE bar() {
     asm("");

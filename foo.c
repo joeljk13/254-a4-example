@@ -1,4 +1,4 @@
-#include "foo.h"
+#include "blah.h"
 
 int foo() {
     // Notice how there's a 4:5 ratio of asm to source lines here - this ratio
@@ -12,6 +12,7 @@ int foo() {
 }
 
 static void NO_INLINE bar() {
+    // This is just to make sure this function doesn't get optimized out
     asm("");
 }
 
@@ -31,7 +32,8 @@ void NO_INLINE compilicated_func() {
 }
 
 int main() {
-    bar(); // which bar?
+    // which bar?
+    bar();
     compilicated_func();
     // Notice that this source comes from a different file
     blah();

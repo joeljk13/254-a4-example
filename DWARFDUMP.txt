@@ -380,7 +380,7 @@ LOCAL_SYMBOLS:
                       DW_AT_external              yes(1)
                       DW_AT_name                  main
                       DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                      DW_AT_decl_line             0x00000021
+                      DW_AT_decl_line             0x00000022
                       DW_AT_type                  <0x00000062>
                       DW_AT_low_pc                0x00400470
                       DW_AT_high_pc               <offset-from-lowpc>42
@@ -392,7 +392,7 @@ LOCAL_SYMBOLS:
                         DW_AT_low_pc                0x00400482
                         DW_AT_high_pc               <offset-from-lowpc>17
                         DW_AT_call_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                        DW_AT_call_line             0x00000025
+                        DW_AT_call_line             0x00000027
                         DW_AT_sibling               <0x00000379>
 < 3><0x0000033d>        DW_TAG_lexical_block
                           DW_AT_low_pc                0x00400482
@@ -419,7 +419,7 @@ LOCAL_SYMBOLS:
                       DW_AT_external              yes(1)
                       DW_AT_name                  compilicated_func
                       DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                      DW_AT_decl_line             0x00000012
+                      DW_AT_decl_line             0x00000013
                       DW_AT_low_pc                0x004005b0
                       DW_AT_high_pc               <offset-from-lowpc>113
                       DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
@@ -428,13 +428,13 @@ LOCAL_SYMBOLS:
 < 2><0x000003b1>      DW_TAG_variable
                         DW_AT_name                  x
                         DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                        DW_AT_decl_line             0x00000013
+                        DW_AT_decl_line             0x00000014
                         DW_AT_type                  <0x00000062>
                         DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
 < 2><0x000003bd>      DW_TAG_variable
                         DW_AT_name                  y
                         DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                        DW_AT_decl_line             0x00000015
+                        DW_AT_decl_line             0x00000016
                         DW_AT_type                  <0x00000069>
                         DW_AT_location              len 0x0002: 916c: DW_OP_fbreg -20
 < 2><0x000003c9>      DW_TAG_lexical_block
@@ -444,7 +444,7 @@ LOCAL_SYMBOLS:
 < 3><0x000003de>        DW_TAG_variable
                           DW_AT_name                  i
                           DW_AT_decl_file             0x00000001 /home/hoover/u3/jkottas/ur/254-a4-example/foo.c
-                          DW_AT_decl_line             0x00000018
+                          DW_AT_decl_line             0x00000019
                           DW_AT_type                  <0x00000062>
                           DW_AT_location              <loclist at offset 0x00000000 with 3 entries follows>
 			[ 0]< offset pair low-off : 0x004005d0 addr  0x004005d0 high-off  0x004005e8 addr 0x004005e8>DW_OP_lit0 DW_OP_stack_value
@@ -523,14 +523,14 @@ LOCAL_SYMBOLS:
 < 1><0x000004dd>    DW_TAG_subprogram
                       DW_AT_external              yes(1)
                       DW_AT_name                  blah
-                      DW_AT_decl_file             0x00000002 /home/hoover/u3/jkottas/ur/254-a4-example/foo.h
+                      DW_AT_decl_file             0x00000002 /home/hoover/u3/jkottas/ur/254-a4-example/blah.h
                       DW_AT_decl_line             0x00000004
                       DW_AT_type                  <0x00000062>
                       DW_AT_inline                DW_INL_declared_inlined
                       DW_AT_sibling               <0x000004f7>
 < 2><0x000004ed>      DW_TAG_variable
                         DW_AT_name                  x
-                        DW_AT_decl_file             0x00000002 /home/hoover/u3/jkottas/ur/254-a4-example/foo.h
+                        DW_AT_decl_file             0x00000002 /home/hoover/u3/jkottas/ur/254-a4-example/blah.h
                         DW_AT_decl_line             0x00000005
                         DW_AT_type                  <0x00000062>
 < 1><0x000004f7>    DW_TAG_subprogram
@@ -557,32 +557,32 @@ Source lines (from CU-DIE at .debug_info offset 0x0000000b):
             IS=val ISA number, DI=val discriminator value
 <pc>        [lno,col] NS BB ET PE EB IS= DI= uri: "filepath"
 0x00400580  [  14, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/foo.c"
-0x00400580  [  15, 0] NS
 0x00400580  [  16, 0] NS
+0x00400580  [  17, 0] NS
 0x00400590  [   3, 0] NS
 0x00400594  [  10, 0] NS
 0x004005a5  [  12, 0] NS
-0x004005b0  [  18, 0] NS
-0x004005b4  [  20, 0] NS
-0x004005c5  [  21, 0] NS
-0x004005d0  [  25, 0] NS
-0x004005d4  [  26, 0] NS
-0x004005d9  [  25, 0] NS
-0x004005dd  [  26, 0] NS
-0x004005e8  [  25, 0] NS
-0x004005ec  [  26, 0] NS
-0x004005f1  [  25, 0] NS
-0x004005f8  [  26, 0] NS
-0x00400603  [  28, 0] NS
-0x0040060c  [  30, 0] NS
-0x0040061c  [  31, 0] NS
-0x00400621  [  31, 0] NS ET
-0x00400470  [  33, 0] NS
-0x00400474  [  34, 0] NS
-0x0040047b  [  35, 0] NS
-0x00400482  [   6, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/foo.h"
-0x00400493  [  39, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/foo.c"
-0x0040049a  [  39, 0] NS ET
+0x004005b0  [  19, 0] NS
+0x004005b4  [  21, 0] NS
+0x004005c5  [  22, 0] NS
+0x004005d0  [  26, 0] NS
+0x004005d4  [  27, 0] NS
+0x004005d9  [  26, 0] NS
+0x004005dd  [  27, 0] NS
+0x004005e8  [  26, 0] NS
+0x004005ec  [  27, 0] NS
+0x004005f1  [  26, 0] NS
+0x004005f8  [  27, 0] NS
+0x00400603  [  29, 0] NS
+0x0040060c  [  31, 0] NS
+0x0040061c  [  32, 0] NS
+0x00400621  [  32, 0] NS ET
+0x00400470  [  34, 0] NS
+0x00400474  [  36, 0] NS
+0x0040047b  [  37, 0] NS
+0x00400482  [   6, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/blah.h"
+0x00400493  [  41, 0] NS uri: "/home/hoover/u3/jkottas/ur/254-a4-example/foo.c"
+0x0040049a  [  41, 0] NS ET
 
 .debug_macro: Macro info for a single cu
 Macro data from CU-DIE at .debug_info offset 0x0000000b:
@@ -593,7 +593,7 @@ Macro data from CU-DIE at .debug_info offset 0x0000000b:
    [  2] 0x03 DW_MACRO_start_file   line 31 file number 8 /usr/include/stdc-predef.h
    [  3] 0x07 DW_MACRO_import       offset 0x0000090a
    [  4] 0x04 DW_MACRO_end_file   
-   [  5] 0x03 DW_MACRO_start_file   line 1 file number 2 /home/hoover/u3/jkottas/ur/254-a4-example/foo.h
+   [  5] 0x03 DW_MACRO_start_file   line 1 file number 2 /home/hoover/u3/jkottas/ur/254-a4-example/blah.h
    [  6] 0x03 DW_MACRO_start_file   line 1 file number 6 /usr/include/stdio.h
    [  7] 0x07 DW_MACRO_import       offset 0x0000092c
    [  8] 0x03 DW_MACRO_start_file   line 28 file number 9 /usr/include/bits/libc-header-start.h
@@ -1508,7 +1508,7 @@ COMPILE_UNIT<header overall offset = 0x00000514>:
                     DW_AT_comp_dir              /home/hoover/u3/jkottas/ur/254-a4-example
                     DW_AT_low_pc                0x00400630
                     DW_AT_high_pc               <offset-from-lowpc>20
-                    DW_AT_stmt_list             0x000001eb
+                    DW_AT_stmt_list             0x000001ec
                     DW_AT_GNU_macros            0x000012b2
 
 LOCAL_SYMBOLS:
@@ -1903,8 +1903,8 @@ Source lines (from CU-DIE at .debug_info offset 0x0000051f):
 0x00400630  [   4, 0] NS
 0x00400630  [   5, 0] NS
 0x00400640  [   7, 0] NS
-0x00400640  [   8, 0] NS
-0x00400644  [   8, 0] NS ET
+0x00400640  [   9, 0] NS
+0x00400644  [   9, 0] NS ET
 
 .debug_macro: Macro info for a single cu
 Macro data from CU-DIE at .debug_info offset 0x0000051f:
@@ -1915,7 +1915,7 @@ Macro data from CU-DIE at .debug_info offset 0x0000051f:
    [  2] 0x03 DW_MACRO_start_file   line 31 file number 7 /usr/include/stdc-predef.h
    [  3] 0x07 DW_MACRO_import       offset 0x0000090a
    [  4] 0x04 DW_MACRO_end_file   
-   [  5] 0x03 DW_MACRO_start_file   line 1 file number 8 /home/hoover/u3/jkottas/ur/254-a4-example/foo.h
+   [  5] 0x03 DW_MACRO_start_file   line 1 file number 8 /home/hoover/u3/jkottas/ur/254-a4-example/blah.h
    [  6] 0x03 DW_MACRO_start_file   line 1 file number 5 /usr/include/stdio.h
    [  7] 0x07 DW_MACRO_import       offset 0x0000092c
    [  8] 0x03 DW_MACRO_start_file   line 28 file number 9 /usr/include/bits/libc-header-start.h
@@ -2767,7 +2767,7 @@ COMPILE_UNIT<header overall offset = 0x00000514>:
                     DW_AT_comp_dir              /home/hoover/u3/jkottas/ur/254-a4-example
                     DW_AT_low_pc                0x00400630
                     DW_AT_high_pc               <offset-from-lowpc>20
-                    DW_AT_stmt_list             0x000001eb
+                    DW_AT_stmt_list             0x000001ec
                     DW_AT_GNU_macros            0x000012b2
 
 
