@@ -16,6 +16,18 @@ static void NO_INLINE bar() {
     asm("");
 }
 
+void html_test() {
+    int nbsp = 5;
+    int* ptr = &nbsp;
+
+    char br = 'x';
+    if (nbsp<br>5) {
+        ptr += 1;
+    }
+
+    printf("%d\n", nbsp);
+}
+
 void NO_INLINE complicated_func() {
     int x;
     scanf("%d\n", &x);
@@ -37,5 +49,6 @@ int main() {
     complicated_func();
     // Notice that the source before this comes from a different file
     blah();
+    html_test();
     return 0;
 }
