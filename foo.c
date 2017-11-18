@@ -1,4 +1,5 @@
 #include "blah.h"
+#include "header.h"
 
 int foo() {
     // Notice how there's a 4:7 ratio of asm to source lines here - this ratio
