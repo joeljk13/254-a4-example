@@ -1,0 +1,4 @@
+test*
+!test*.c
+DWARFDUMP.txt
+OBJDUMP*.txt
