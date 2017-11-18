@@ -51,5 +51,7 @@ int main() {
     // Notice that the source before this comes from a different file
     blah();
     html_test();
+    void func();
+    func();
     return 0;
 }
