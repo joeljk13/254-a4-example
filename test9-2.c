@@ -1,4 +1,4 @@
-#include "blah.h"
+#include "test9-1.h"
 
 static void NO_INLINE bar() {
     asm("");
